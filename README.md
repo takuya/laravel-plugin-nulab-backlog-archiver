@@ -65,5 +65,7 @@ composer config repositories.'takuya/laravel-plugin-nulab-backlog-archiver' \
 vcs 'https://github.com/takuya/laravel-plugin-nulab-backlog-archiver'
 composer require 'takuya/laravel-plugin-nulab-backlog-archiver':master
 composer install
+## lumen の場合は、serviceProviderの登録
+sed -i '/EventServiceProvider/a $app->register(\\Takuya\\Laravel\\Backlog\\Providers\\AppServiceProvider::class);' bootstrap/app.php
 
 ```
