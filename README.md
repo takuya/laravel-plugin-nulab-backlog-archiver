@@ -85,4 +85,4 @@ php artisan backlog:make:models:all
 
 リレーションのためのManyToMany・OneToManyの中間テーブルは作成していません。Larave Eloquent Mode のキャストを使ってArray/Jsonにキャストしています。
 
-必要に応じてモデルを書き換えて使ってください。
+リレーションの必要に応じてモデルを書き換えて使ってください。
