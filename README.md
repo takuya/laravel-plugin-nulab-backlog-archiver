@@ -79,3 +79,10 @@ php artisan backlog:make:models:all
 ## 日付に関する注意点。
 
 バックログのAPIが返却するデータはすべてUTCです。データ保存時はUTCで保存することを想定してます。laravel/lumenのタイムゾーン設定はUTCにして、表示時にタイムゾーンに合わせて表示するようにするほうが良いと思います。内部をJSTにすると９時間ズレます。
+
+
+## リレーションに関する注意点
+
+リレーションのためのManyToMany・OneToManyの中間テーブルは作成していません。Larave Eloquent Mode のキャストを使ってArray/Jsonにキャストしています。
+
+必要に応じてモデルを書き換えて使ってください。
