@@ -68,4 +68,8 @@ composer install
 ## lumen の場合は、serviceProviderの登録
 sed -i '/EventServiceProvider/a $app->register(\\Takuya\\Laravel\\Backlog\\Providers\\AppServiceProvider::class);' bootstrap/app.php
 
+## マイグレーション・モデル
+php artisan backlog:make:migration:all
+php artisan backlog:make:models:all
+
 ```
