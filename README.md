@@ -34,6 +34,8 @@ $cli = new BacklogAPIClient($space, $key);
 $cli->deleteComment(111,[...]);
 ```
 
+他のアプリケーションにデータを移行するとか、解約後に簡易的にデータ閲覧するなど、データの囲い込みに負けないために使えます。
+
 ## 設定
 
 `.env` ファイルに BacklogAPIアクセス用の`キー`と`スペースURL`を書いてください。
