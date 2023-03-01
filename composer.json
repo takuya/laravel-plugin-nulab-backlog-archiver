@@ -1,5 +1,5 @@
 {
-    "name": "takuya/backlog-plugin",
+    "name": "takuya/laravel-plugin-nulab-backlog-archiver",
     "description": "The Laravel Lumen Framework.",
     "keywords": ["framework", "laravel", "lumen"],
     "license": "MIT",
