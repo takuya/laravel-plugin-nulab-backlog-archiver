@@ -70,8 +70,12 @@ composer install
 ## lumen の場合は、serviceProviderの登録
 sed -i '/EventServiceProvider/a $app->register(\\Takuya\\Laravel\\Backlog\\Providers\\AppServiceProvider::class);' bootstrap/app.php
 
-## マイグレーション・モデル
+## マイグレーション・モデル作成
 php artisan backlog:make:migration:all
 php artisan backlog:make:models:all
 
 ```
+
+## 日付に関する注意点。
+
+バックログのAPIが返却するデータはすべてUTCです。データ保存時はUTCで保存することを想定してます。laravel/lumenのタイムゾーン設定はUTCにしておくと楽です。
